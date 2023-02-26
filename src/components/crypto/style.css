@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.showGraph{
+    width: 100%;
+    height: 200px;
+}
+.spiner{
+    position: relative;
+};
+
+@keyframes rotating {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+#svg{
+    position: absolute;
+    right: 16px;
+    animation: 2s  infinite linear;
+    opacity:0 ;
+    transition: 0.2s opacity;
+}
+
+.searching svg {
+    opacity:  1;
+}
+
+.sear-inp[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 9px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('./red.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.9s ease-in-out;
+    width: 34%;
+    font-family: thin;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  
+  .sear-inp[type=text]:focus {
+    width: 45%;
+    background-color: rgb(202, 202, 247);
+    color: rgb(0, 0, 0);
+    font-family: thin;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+
+
+  .sear-inp{
+    margin-left: 32%;
+    margin-top: 3%;
+  }
+
+  .sear-head{
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .res-sear{
+    font-family: 'Lusitana', serif;
+    margin-top: 5%;
+    width: 30%;
+    text-align: center;
+    margin : auto;
+    padding: 12px 14px;
+    border-radius: 9px;
+    background-color: rgb(202, 202, 247);
+  }
+  .res-cont{
+    margin-top: 4%;
+    box-shadow: 7px 10px 10px 10px rgb(202, 202, 247);
+    background-color: rgb(202, 202, 247);
+  }
+
+  .img-coin{
+    border-radius: 50px;
+    width: 80px;
+    margin-left: 15px;
+  }
+
+  .sear-contai{
+    margin-top: 6%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgb(209, 209, 226);
+    border-radius: 12px;
+    box-shadow: 7px 10px 10px 10px rgb(202, 202, 247);
+  }
+
+  #coin-name{
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    margin-left: 14px;
+    color: black;
+  }
+
+  #coin-btc{
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+    padding-right: 38px;
+  }
+
+  #coin-usd{
+    font-family: 'Comfortaa', cursive;
+    font-size: 22px;
+  }
+
+  .price{
+    float: right;
+    margin-right: 6%;
+  }
+  .price-bt{
+    margin-top: 21px;
+  }
+
+
+  .sear-contai:hover{
+      transform: scale(1.02);
+  }
+
+  #p-img{
+     width: 280px;
+     border-radius: 72px;
+  }
+
+  .p-count{
+    margin-top: 9%;
+  }
+
+  .p-head{
+    text-align: center;
+
+  }
+
+  .p-name{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 20px;
+  }
+
+.p-t-ti{
+    font-family: 'Comfortaa', cursive;
+    width: 300px;
+}
+
+.p-count{
+    margin-top: 4%;
+  line-height: 58px;
+}
+
+.p-div{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.p-t-det{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}

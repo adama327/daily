@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+#title-head{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+  text-shadow: 16px 0px 29px rgb(69, 69, 116);
+  margin-left: 15px;
+  position: relative;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer{
+  margin-top: 8%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#mySidenav a {
+  position: fixed;
+  right: -185px;
+  transition: 0.8s;
+  padding: 15px;
+  width: 225px;
+  text-decoration: none;
+  font-size: 20px;
   color: white;
+  border-radius: 0 5px 5px 0;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+#mySidenav a:hover {
+  right: 0%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#blog {
+  top: 210px;
+  background-color: #BB001B;
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects {
+  top: 270px;
+  background-color: 	#4267B2;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact {
+  top: 330px;
+  background-color:#1D9BF0;
+  display: flex;
+  justify-content: space-between;
+}
+.rsc{
+  font-family: thin;
+  font-size: 20px;
 }
